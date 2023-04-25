@@ -1,0 +1,28 @@
+#profilepic {
+    background-color: gray;
+    width: 300px;
+    height: 413px;
+    top: 0;
+}
+
+#profile-name {
+    font-size: 3em;
+    margin: 0.67em 0;
+    position: absolute;
+    top: 52px;
+    left: 293px;
+}
+
+#profile {
+    padding: 80px;
+    position: relative;
+}
+
+#container {
+    display: flex;
+}
+
+#about-text {
+    padding-top: 230px;
+    padding-right: 40px;
+}
