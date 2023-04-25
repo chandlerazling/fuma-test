@@ -1,7 +1,7 @@
 .video-container {
     width: 100vw;
     height: 100vh;
-    background-image: url(fallback-bg.png);
+    background-image: url(images/fallback-bg.png);
     background-size: cover;
     overflow: hidden;
   }
@@ -182,7 +182,7 @@
   }
 
   #bottom {
-    background-image: url(bottom-bg.png);
+    background-image: url(images/bottom-bg.png);
     background-size: cover;
     padding: 70px 10%;
     position: relative;
