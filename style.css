@@ -230,3 +230,10 @@
         grid-template-rows: auto;
       }
     }
+
+    @media (min-width: 767px) {
+      #game-overview__bottom_inner {
+        padding-top: 64px;
+        padding-bottom: 280px;
+      }
+    }
