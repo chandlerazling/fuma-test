@@ -12,20 +12,28 @@ body {
     top: 0;
 }
 
-#profile-name {
-    font-size: 4.5rem;
+#ja-name {
+    font-size: 3.5rem;
+    padding-right: 32px;
+    white-space: nowrap;
 }
 
 #en-name {
     font-weight: 300;
-    font-size: 3.5rem;
-    padding-left: 32px;;
+    font-size: 1.8rem;
+    white-space: nowrap;
 }
 
 #container {
-    width: 100%;
     max-width: 800px;
     padding: 5%;
+    padding-bottom: 180px;
+}
+
+#history {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
 
 .date {
@@ -36,6 +44,8 @@ body {
 .event {
     font-size: 1.2rem;
     font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 24px;
 }
 td {
     padding-right: 32px;
@@ -68,4 +78,22 @@ p {
     #container {
         padding: 80px;
     }
+
+    #history {
+        grid-template-columns: max-content 1fr;
+        grid-gap: 16px 40px;
+    }
+
+    .event {
+        margin: 0;
+    }
+
+    #en-name {
+        font-size: 3.5rem;
+    }
+
+    #ja-name {
+        font-size: 3.5rem;
+    }    
+    
 }
