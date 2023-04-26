@@ -15,14 +15,12 @@
   }
       
   #atf__video {
-    /* position: absolute;
-    top: 50%;
-    left: 50%; */
     margin-top: -25px;
     height: 120vh; 
     width: 120vw;
-    /* height: 120vh; */
-    transform: translate(-100px, -40px);
+    position: absolute;
+    transform: translate(-50%, -40px);
+    left: 50%;
     pointer-events: none;
   }
 
@@ -195,7 +193,7 @@
   }
 
 
-  @media only screen and (hover: none) and (pointer: coarse){
+  /* @media only screen and (hover: none) and (pointer: coarse){
 
     #atf__video {
       display: none;
@@ -205,7 +203,7 @@
       display: block;
     }
     
-    }
+    } */
 
     @media only screen and (max-width: 767px) {
       #title {
