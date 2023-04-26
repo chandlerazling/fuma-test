@@ -12,6 +12,12 @@ body {
     top: 0;
 }
 
+#profile-name {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
 #ja-name {
     font-size: 3.5rem;
     padding-right: 32px;
