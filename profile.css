@@ -70,6 +70,8 @@ p {
     letter-spacing: 1.3px;
     margin-top: 40px;
     transition: all 300ms ease-out;
+    display: block;
+    width: fit-content;
 }
 
 #description {
