@@ -15,7 +15,24 @@
 
 </head>
 <html>
+<script>
 
+    window.onload = function() {
+        const thumbnails = document.getElementsByClassName('thumbnail');
+        for(var i = 0; i < thumbnails.length; i++) {
+            var thumbnail = thumbnails[i];
+            thumbnail.onclick = function(event) {
+                const clickedIndex = (event.target.getAttribute("data-index"));
+                const gameplayShotImg = document.getElementById("gameplay-shot");
+                gameplayShotImg.style.opacity = 0;
+                setTimeout(() => {
+                    gameplayShotImg.src = `images/shots/shot-${clickedIndex}.png`;
+                    gameplayShotImg.style.opacity = 1;
+                }, 300);
+            }
+        }
+    }
+</script>
 <body>
     <a id="name" href="profile.html">FUMA YAMANE</a>
 
@@ -48,22 +65,23 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
                 <div id="thumbnail-grid">
-                    <div class="thumbnail" style="background-image:url('images/thumbnail-1.png');">
+                    <div class="thumbnail" data-index=1 style="background-image:url('images/thumbnail-1.png');">
                     </div>
-                    <div class="thumbnail" style="background-image:url('images/thumbnail-2.png');">
+                    <div class="thumbnail" data-index=2 style="background-image:url('images/thumbnail-2.png');">
                     </div>
-                    <div class="thumbnail" style="background-image:url('images/thumbnail-3.png');">
+                    <div class="thumbnail" data-index=3 style="background-image:url('images/thumbnail-3.png');">
                     </div>
-                    <div class="thumbnail" style="background-image:url('images/thumbnail-4.png');">
+                    <div class="thumbnail" data-index=4 style="background-image:url('images/thumbnail-4.png');">
                     </div>
-                    <div class="thumbnail" style="background-image:url('images/thumbnail-5.png');">
+                    <div class="thumbnail" data-index=5 style="background-image:url('images/thumbnail-5.png');">
                     </div>
-                    <div class="thumbnail" style="background-image:url('images/thumbnail-6.png');">
+                    <div class="thumbnail" data-index=6 style="background-image:url('images/thumbnail-6.png');">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <img id="gameplay-shot" src="images/shots/shot-1.png" />
     <div id="game-overview__bottom" class="game-overview__outer-wrapper">
         <div class="game-overview__inner-wrapper">
         <div class="separator" id="bottom-separator"></div>

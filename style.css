@@ -28,6 +28,11 @@
   #fallback-video {
     display: none;
   }
+
+  #gameplay-shot {
+    width: 100%;
+    transition: all 0.3s ease-out;
+  }
  
   @media (min-aspect-ratio: 16/9) {
     #atf__video {
@@ -133,7 +138,7 @@
     color: rgba(255,255,255,0.8);
     background: rgb(17,44,65);
     background: linear-gradient(0, rgba(8,23,34,1) 30%, rgba(17,44,65,1) 100%);
-    padding: 64px 10%;
+    padding: 40px 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,6 +169,7 @@
     height: 100%;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
   }
 
 
