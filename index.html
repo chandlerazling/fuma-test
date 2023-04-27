@@ -24,11 +24,7 @@
             thumbnail.onclick = function(event) {
                 const clickedIndex = (event.target.getAttribute("data-index"));
                 const gameplayShotImg = document.getElementById("gameplay-shot");
-                gameplayShotImg.style.opacity = 0;
-                setTimeout(() => {
-                    gameplayShotImg.src = `images/shots/shot-${clickedIndex}.png`;
-                    gameplayShotImg.style.opacity = 1;
-                }, 300);
+                gameplayShotImg.src = `images/shots/shot-${clickedIndex}.png`;
             }
         }
     }
