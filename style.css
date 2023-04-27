@@ -232,9 +232,16 @@
       }
     }
 
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
       #game-overview__bottom_inner {
         padding-top: 64px;
-        padding-bottom: 280px;
+        padding-bottom: 120px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      #game-overview__bottom {
+        height: 56.25vw;
+        box-sizing: border-box;
       }
     }
