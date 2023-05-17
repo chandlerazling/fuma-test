@@ -152,21 +152,23 @@
   #trailer {
     height: 100%;
     width: 100%;
+    max-width: 900px;
+    justify-self: center;
   }
 
   #thumbnail-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
     grid-gap: 8px;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     vertical-align: center;
-    height: 100%;
   }
 
   .thumbnail {
-    height: 100%;
+    height: auto;
+    width: 10%;
     background-size: cover;
     background-position: center;
     cursor: pointer;
@@ -176,11 +178,12 @@
   #game-media {
     margin-top: 32px;
     display: grid;
-    grid-template-columns: 0.7fr 1fr;
-    grid-template-rows: 370px;
+    grid-template-columns: auto;
+    grid-template-rows: 420px auto;
     align-items: center;
     justify-content: center;
-    grid-gap: 10px;
+    grid-gap: 24px;
+    margin-bottom: 16px;
   }
 
   #game-overview__bottom {
@@ -223,8 +226,6 @@
 
       #game-media {
         grid-template-columns: 1fr;
-        grid-template-rows: 1.2fr 1fr;
-        height: 500px;
       }
 
       #atf__headline {
@@ -233,8 +234,7 @@
 
       #thumbnail-grid {
         grid-gap: 4px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+        /* grid-template-columns: auto; */
       }
     }
 
