@@ -226,15 +226,21 @@
 
       #game-media {
         grid-template-columns: 1fr;
+         grid-template-rows: 155px auto;
       }
 
       #atf__headline {
         padding: 10%;
       }
 
+      .thumbnail {
+        width: 31%;
+      }
+
       #thumbnail-grid {
         grid-gap: 4px;
         /* grid-template-columns: auto; */
+        flex-wrap: wrap;
       }
     }
 
